@@ -5,7 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="img.png">
         <title>submission</title>
+        <script src="https://kit.fontawesome.com/f08ad66076.js" crossorigin="anonymous"></script>
         <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
             body {
                 background-image: url("img2.jpg");
                 background-size: cover;
@@ -19,13 +25,36 @@
                 font-size: 60px;
                 color: rgb(0, 255, 247);
             }
+            .about {
+                font-size: 16px;
+            }
+            .one,
+            .two {
+                padding-top: 0;
+                padding-right: 25px;
+            }
             .head {
+                padding-top: 20px;
                 color: rgb(251, 216, 163);
                 font-size: 30px;
                 cursor: pointer;
             }
             .head:hover {
                 color: rgb(255, 255, 255);
+            }
+            .bottom-text {
+                font-size: 25px;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                color: rgb(251, 216, 163);
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            h3 {
+                color: white;
+                font-size: 16px;
             }
             a {
                 text-decoration: none;
@@ -34,15 +63,19 @@
                 color: white;
             }
             .blink {
-                animation: blinker 1s linear infinite;
+                padding-top: 6%;
+                animation: blinker 2s linear infinite;
                 color: rgb(255, 187, 0);
                 font-family: sans-serif;
                 font-size: large;
             }
             @keyframes blinker {
                 60% {
-                    opacity: 0;
+                    opacity: 0.3;
                 }
+            }
+            .blink:hover {
+                color: white;
             }
         </style>
     </head>
@@ -63,11 +96,28 @@
                 <p class="blink">submit another form</p>
             </em>
         </a>
-        <br>
-        <div>
-            <p>contact us:<a
-                href="mailto:moganatisujith01@gmail.com?subject=Your%20Subject&body=Hello%20there,%0A%0A">E-mail</a>
-            </p>
-        </div>
+
+        <footer class="bottom-text">
+            <h3>About us:</h3><br>
+            <p class="about">Luci Institute of Technologies is a cutting-edge institution
+                dedicated to fostering innovation and excellence in technology. With
+                state-of-the-art facilities and a dynamic curriculum, it equips students with
+                the skills and knowledge to thrive in the rapidly evolving tech landscape.</p><br>
+            <div class="contact">
+                <h3 class="about">contact us:
+                </h3><br>
+                <a
+                    class="one"
+                    href="mailto:moganatisujith01@gmail.com?subject=Your%20Subject&body=Hello%20there,%0A%0A">
+                    <i class="fa-regular fa-envelope fa-beat-fade fa-xs" style="color: #ffaf41;"></i>
+                </a>
+                <a class="two" href="tel:+919010646264" title="Call Us">
+                    <i class="fa-solid fa-phone-volume fa-beat-fade fa-xs" style="color: #ffaf41;"></i>
+                </a>
+                <a class="three" href="https://www.linkedin.com/in/moganati-sujith-482778290/">
+                    <i class="fa-brands fa-linkedin fa-beat-fade fa-xs" style="color: #ffaf41;"></i>
+                </a>
+            </div>
+        </footer>
     </body>
 </html>
