@@ -21,7 +21,7 @@
             <em>
                 ENTER VALID DETAILS IN THE BELOW SECTION</em>
         </marquee>
-        <form class="field">
+        <form action="submit.html">
             <fieldset>
                 <legend>Registeration form</legend>
                 NAME :
@@ -29,22 +29,18 @@
                 <input type="text" class="textbox" placeholder="first name" required="required"><br><br>
                 <input type="text" class="textbox" placeholder="last name" required="required">
                 <br><br>
-
                 E-MAIL:
                 <br><br>
                 <input class="textbox" type="email" placeholder="e-mail" required="required">
                 <br><br>
-
                 DATE OF BIRTH :
                 <input type="date" name="dob" required="required">
                 <br><br>
-
                 GENDER :
                 <input type="radio" name="gender" value="male">male
                 <input type="radio" name="gender" value="female">female
                 <input type="radio" name="gender" value="others" checked="checked">others
                 <br><br>
-
                 MOBILE :
                 <br>
                 <br>
@@ -59,7 +55,6 @@
                     inputmode="numeric"
                     required="required">
                 <br><br>
-
                 BRANCH :
                 <select name="branch" required="required">
                     <option value="" default="default">select</option>
@@ -87,18 +82,19 @@
                     placeholder="HALL-TICKET"
                     pattern="[0-9]*"
                     inputmode="numeric"
+                    maxlength="11"
                     required="required">
                 <br><br>
                 EAMCET RANK CARD :
                 <br><br>
-                <input type="file" accept=".pdf">
+                <input type="file" accept=".pdf" required="required">
                 <br><br>
                 AADHAR NO :
                 <br><br>
                 <input
                     class="textbox"
                     type="text"
-                    placeholder="XXXX XXXX XXXX XXXX"
+                    placeholder="ENTER 12 DIGIT NUMBER"
                     maxlength="12"
                     pattern="[0-9]*"
                     inputmode="numeric"
@@ -136,7 +132,6 @@
                     <option value="KURNOOL">KURNOOL</option>
                 </select>
                 <br><br>
-
                 ADDRESS :
                 <br><br>
                 <textarea
@@ -146,19 +141,14 @@
                     placeholder="As per aadhar"
                     required="required"></textarea>
                 <br>
-
                 PHOTO :
                 <br><br>
-                <input type="file" accept="image/*">
+                <input type="file" accept="image/*" required="required">
                 <br>
-
                 <center>
-                    <a href="submit.html">
-                        <input type="button" value="submit" class="submit">
-                    </a>
+                    <button type="submit" class="submit">submit</button>
                 </center>
             </fieldset>
-
         </form>
         <br>
         <center>
