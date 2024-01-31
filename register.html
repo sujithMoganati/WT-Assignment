@@ -6,38 +6,37 @@
         <title>Registeration</title>
         <link rel="icon" href="img.png">
         <link rel="stylesheet" href="style.css">
-        <style>
-        </style>
+        <style></style>
     </head>
     <body>
-            <center>
-                <a href="index.html">
-                    <h1 class="head">
-                        <sub>
-                            <sub><img src="img.png" alt="" width="50px"></sub>
-                        </sub>LUCI INSTITUTE OF TECHNOLOGY</h1>
-                </a>
-            </center>
-            <marquee scrollamount="15" direction="left" style="color: rgb(255, 170, 65);">
-                <em>
-                    ENTER VALID DETAILS IN THE BELOW SECTION</em>
-            </marquee>
-            <form class="field">
+        <center>
+            <a href="index.html">
+                <h1 class="head">
+                    <sub>
+                        <sub><img src="img.png" alt="" width="50px"></sub>
+                    </sub>LUCI INSTITUTE OF TECHNOLOGY</h1>
+            </a>
+        </center>
+        <marquee scrollamount="15" direction="left" style="color: rgb(255, 170, 65);">
+            <em>
+                ENTER VALID DETAILS IN THE BELOW SECTION</em>
+        </marquee>
+        <form class="field">
             <fieldset>
                 <legend>Registeration form</legend>
                 NAME :
                 <br><br>
-                <input type="text" class="textbox" placeholder="first name"><br><br>
-                <input type="text" class="textbox" placeholder="last name">
+                <input type="text" class="textbox" placeholder="first name" required="required"><br><br>
+                <input type="text" class="textbox" placeholder="last name" required="required">
                 <br><br>
 
                 E-MAIL:
                 <br><br>
-                <input class="textbox" type="email" placeholder="e-mail">
+                <input class="textbox" type="email" placeholder="e-mail" required="required">
                 <br><br>
 
                 DATE OF BIRTH :
-                <input type="date" name="dob">
+                <input type="date" name="dob" required="required">
                 <br><br>
 
                 GENDER :
@@ -52,11 +51,17 @@
                 <select name="mobile">
                     <option value="+91">+91</option>
                 </select>
-                <input type="tel" placeholder="mobile" maxlength="10">
+                <input
+                    type="tel"
+                    placeholder="mobile"
+                    maxlength="10"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                    required="required">
                 <br><br>
 
                 BRANCH :
-                <select name="branch">
+                <select name="branch" required="required">
                     <option value="" default="default">select</option>
                     <option value="CSE">CSE</option>
                     <option value="IT">IT</option>
@@ -74,28 +79,33 @@
                 <input type="checkbox" value="B.Tech" checked="checked">B.Tech
                 <input type="checkbox" value="M.Tech">M.Tech
                 <br><br>
-
                 EAMCET HALL-TICKET :
                 <br><br>
-                <input class="textbox" type="text" placeholder="HALL-TICKET">
+                <input
+                    class="textbox"
+                    type="text"
+                    placeholder="HALL-TICKET"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                    required="required">
                 <br><br>
-
                 EAMCET RANK CARD :
                 <br><br>
                 <input type="file" accept=".pdf">
                 <br><br>
-
                 AADHAR NO :
                 <br><br>
                 <input
                     class="textbox"
                     type="text"
                     placeholder="XXXX XXXX XXXX XXXX"
-                    maxlength="12">
+                    maxlength="12"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                    required="required">
                 <br><br>
-
                 DISTRICT :
-                <select name="district">
+                <select name="district" required="required">
                     <option value="" default="default">select</option>
                     <option value="KRISHNA">KRISHNA</option>
                     <option value="ELURU">ELURU</option>
@@ -129,7 +139,12 @@
 
                 ADDRESS :
                 <br><br>
-                <textarea class="textbox" cols="40" rows="5" placeholder="As per aadhar"></textarea>
+                <textarea
+                    class="textbox"
+                    cols="40"
+                    rows="5"
+                    placeholder="As per aadhar"
+                    required="required"></textarea>
                 <br>
 
                 PHOTO :
