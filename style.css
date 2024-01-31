@@ -64,3 +64,24 @@ td{
 th{
     padding: 10px;
 }
+.contact{
+    text-align: center;
+    
+}
+.about {
+    font-size: 20px;
+}
+.one,.two,.three{
+    font-size: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.bottom-text {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(251, 216, 163);
+    text-align: center;
+    padding-bottom: 20px;
+}
