@@ -23,6 +23,11 @@ a:link {
     width: 100%;
     border: none;
 }
+.textbox:hover{
+    color: black;
+    font-size: 18px;
+    background-color: rgb(255, 236, 212);
+}
 .btn {
     text-align: center;
     position: relative;
