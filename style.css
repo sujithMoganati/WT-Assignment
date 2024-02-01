@@ -1,154 +1,157 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img.png">
-        <title>submission</title>
-        <script src="https://kit.fontawesome.com/f08ad66076.js" crossorigin="anonymous"></script>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body {
-                background-image: url("img2.jpg");
-                background-size: cover;
-                background-attachment: fixed;
-                text-align: center;
-                color: burlywood;
-                font-size: 30px;
-            }
-            h2 {
-                margin-top: 120px;
-                font-size: 60px;
-                color: rgb(0, 255, 247);
-            }
-            .about {
-                font-size: 16px;
-            }
-            .one,
-            .two {
-                padding-top: 0;
-                padding-right: 25px;
-            }
-            .head {
-                padding-top: 20px;
-                color: rgb(251, 216, 163);
-                font-size: 30px;
-                cursor: pointer;
-            }
-            .head:hover {
-                color: rgb(255, 255, 255);
-            }
-            .bottom-text {
-                font-size: 25px;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                color: rgb(251, 216, 163);
-                text-align: center;
-                padding-bottom: 20px;
-            }
-            h3 {
-                color: white;
-                font-size: 16px;
-            }
-            a {
-                text-decoration: none;
-            }
-            a:hover {
-                color: white;
-            }
-            button {
-                margin: 28px;
-                width: 12em;
-                position: relative;
-                height: 3.5em;
-                border: 3px ridge rgb(255, 224, 180);
-                outline: none;
-                background-color: transparent;
-                color: white;
-                transition: 1s;
-                border-radius: 0.3em;
-                font-size: 16px;
-                font-weight: bold;
-                cursor: pointer;
-            }
+body {
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(251, 216, 163);
+    width: 100%;
+    margin: 0;
+}
+.head {
+    color: burlywood;
+    font-size: 30px;
+    cursor: pointer;
+}
+.head:hover {
+    color: rgb(255, 255, 255);
+}
+a:link {
+    text-decoration: none;
+}
+.textbox {
+    font-family: 'Lucida Sans', sans-serif;
+    height: 50px;
+    width: 100%;
+    border: none;
+}
+.textbox:hover {
+    color: black;
+    font-size: 18px;
+    background-color: rgb(255, 236, 212);
+}
+.btn {
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 1.2em;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background-color: burlywood;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(251, 216, 163,0.95);
+}
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(251, 216, 163,0.5);
+}
 
-            button::after {
-                content: "";
-                position: absolute;
-                top: -10px;
-                left: 3%;
-                width: 95%;
-                height: 40%;
-                background-color: #000000;
-                transition: 0.5s;
-                transform-origin: center;
-            }
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
 
-            button::before {
-                content: "";
-                transform-origin: center;
-                position: absolute;
-                top: 80%;
-                left: 3%;
-                width: 95%;
-                height: 40%;
-                background-color: #000000;
-                transition: 0.5s;
-            }
-            button:hover::after,
-            button:hover::before {
-                transform: scale(0);
-            }
-            button:hover {
-                box-shadow: inset 0 0 25px rgb(255,175,65);
-            }
-            center {
-                font-size: 16px;
-            }
-        </style>
-    </head>
-    <body>
-        <center>
-            <a href="index.html" target="_blank">
-                <h1 class="head">
-                    <sub>
-                        <sub><img src="img.png" alt="" width="50px"></sub>
-                    </sub>LUCI INSTITUTE OF TECHNOLOGY</h1>
-            </a>
-        </center>
-        <center>
-            <h2>THANK YOU</h2>
-        </center>
-        <br>
-        <a href="register.html">
-            <button>Submit another form</button>
-        </a>
+.btn::after {
+    background-color: burlywood;
+}
 
-        <footer class="bottom-text">
-            <div class="contact">
-                <h3 class="about">contact us:
-                </h3><br>
-                <a
-                    class="one"
-                    href="mailto:moganatisujith01@gmail.com?subject=Your%20Subject&body=Hello%20there,%0A%0A">
-                    <i class="fa-regular fa-envelope fa-beat-fade" style="color: #deb887;"></i>
-                </a>
-                <a class="two" href="tel:+919010646264" title="Call Us">
-                    <i class="fa-solid fa-phone-volume fa-beat-fade fa-xs" style="color: #deb887;"></i>
-                </a>
-                <a class="three" href="https://www.linkedin.com/in/moganati-sujith-482778290/">
-                    <i class="fa-brands fa-linkedin fa-beat-fade fa-xs" style="color: #deb887;"></i>
-                </a>
-            </div><br>
-            <center>
-                <p>Copyright &copy;LUCI institute 2029</p>
-            </center><br>
-        </footer>
-    </body>
-</html>
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.sub {
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgb(219, 218, 218);
+    border-style: solid;
+    background-color: transparent;
+    border-color: rgb(219, 218, 218);
+    width: 120px;
+    height: 40px;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+    border-width: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.sub:hover {
+    color: rgb(55, 52, 52);
+    background-color: rgb(222, 153, 63);
+    border: none;
+    text-shadow: 0 0 50px white, 0 0 20px white, 0 0 15px white;
+    box-shadow: 0 0 50px rgb(186, 134, 66), 0 0 30px rgb(186, 134, 66), 0 0 60px rgb(186, 134, 66), 0 0 120px rgb(255, 255, 255);
+    font-size: 22px;
+    text-transform: inherit;
+    width: 140px;
+    height: 45px;
+    letter-spacing: 3px;
+}
+.sub:active {
+    width: 115px;
+    height: 38px;
+    letter-spacing: 0;
+}
+.table-box {
+    width: 100%;
+    overflow-x: auto;
+}
+.table-box::-webkit-scrollbar {
+    display: none;
+}
+table {
+    font-size: 20px;
+    border-color: #bdbbb6;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+td {
+    text-align: justify;
+    padding: 10px;
+}
+th {
+    padding: 10px;
+}
+.contact {
+    text-align: center;
+
+}
+.about {
+    font-size: 20px;
+}
+.one,
+.three,
+.two {
+    font-size: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.bottom-text {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(251, 216, 163);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.form {
+    padding: 25px;
+}
