@@ -37,7 +37,7 @@ a:link {
     font-family: inherit;
     font-weight: 500;
     color: rgb(0, 0, 0);
-    background-color: rgb(251, 216, 163);
+    background-color: burlywood;
 }
 .btn:hover {
     transform: translateY(-3px);
@@ -62,7 +62,7 @@ a:link {
 }
 
 .btn::after {
-    background-color: rgb(255, 215, 165);
+    background-color: burlywood;
 }
 
 .btn:hover::after {
