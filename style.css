@@ -33,6 +33,7 @@ a:link {
     display: inline-block;
     border-radius: 1.2em;
     transition: all 0.5s;
+    cursor: pointer;
     border: none;
     font-family: inherit;
     font-weight: 500;
@@ -69,13 +70,38 @@ a:link {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
-.submit {
-    font-size: large;
+.sub {
     cursor: pointer;
-    background-color: #ffdd81;
+    border-radius: 5px;
+    color: rgb(219, 218, 218);
+    border-style: solid;
+    background-color: transparent;
+    border-color: rgb(219, 218, 218);
+    width: 120px;
+    height: 40px;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+    border-width: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
-.submit:hover {
-    background-color: #bdbbb6;
+.sub:hover {
+    color: rgb(55, 52, 52);
+    background-color: rgb(222, 153, 63);
+    border-color: rgb(255, 255, 255);
+    text-shadow: 0 0 50px white, 0 0 20px white, 0 0 15px white;
+    box-shadow: 0 0 50px rgb(186, 134, 66), 0 0 30px rgb(186, 134, 66), 0 0 60px rgb(186, 134, 66), 0 0 120px rgb(255, 255, 255);
+    font-size: 22px;
+    text-transform: inherit;
+    width: 140px;
+    height: 45px;
+    letter-spacing: 3px;
+}
+.sub:active {
+    width: 115px;
+    height: 38px;
+    letter-spacing: 0;
 }
 .table-box {
     width: 100%;
