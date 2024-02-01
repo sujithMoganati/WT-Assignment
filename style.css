@@ -1,10 +1,10 @@
 body {
-    background-image: url(img2.jpg);
+    background-image: url("img2.jpg");
     background-size: cover;
     background-attachment: fixed;
     color: rgb(251, 216, 163);
     width: 100%;
-    margin: 0px;
+    margin: 0;
 }
 .head {
     color: burlywood;
@@ -14,8 +14,8 @@ body {
 .head:hover {
     color: rgb(255, 255, 255);
 }
-a:link{
-    text-decoration: none ;
+a:link {
+    text-decoration: none;
 }
 .textbox {
     font-family: 'Lucida Sans', sans-serif;
@@ -23,17 +23,51 @@ a:link{
     width: 100%;
     border: none;
 }
-.register {
-    background-color: #ffdd81;
-    color: rgb(255, 255, 255);
-    margin-top: 11px;
-    margin-left: 25%;
-    width: 50%;
-    font-size: larger;
-    padding: 20px 12px;
+.btn {
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 1.2em;
+    transition: all 0.5s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background-color: rgb(251, 216, 163);
 }
-.register:hover {
-    color: red;
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(251, 216, 163,0.95);
+}
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(251, 216, 163,0.5);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.btn::after {
+    background-color: rgb(255, 215, 165);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
 .submit {
     font-size: large;
@@ -43,11 +77,11 @@ a:link{
 .submit:hover {
     background-color: #bdbbb6;
 }
-.table-box{
+.table-box {
     width: 100%;
     overflow-x: auto;
 }
-.table-box::-webkit-scrollbar{
+.table-box::-webkit-scrollbar {
     display: none;
 }
 table {
@@ -57,21 +91,23 @@ table {
     text-align: center;
     width: 100%;
 }
-td{
+td {
     text-align: justify;
-    padding:10px;
-}
-th{
     padding: 10px;
 }
-.contact{
+th {
+    padding: 10px;
+}
+.contact {
     text-align: center;
-    
+
 }
 .about {
     font-size: 20px;
 }
-.one,.two,.three{
+.one,
+.three,
+.two {
     font-size: 25px;
     padding-left: 25px;
     padding-right: 25px;
