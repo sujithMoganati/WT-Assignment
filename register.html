@@ -1,152 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registeration</title>
-        <link rel="icon" href="img.png">
-        <link rel="stylesheet" href="style.css">
-        <style></style>
-    </head>
-    <body>
-        <center>
-            <a href="index.html">
-                <h1 class="head">
-                    <sub>
-                        <sub><img src="img.png" alt="" width="50px"></sub>
-                    </sub>LUCI INSTITUTE OF TECHNOLOGY</h1>
-            </a>
-        </center>
-        <marquee scrollamount="15" direction="left" style="color: rgb(255, 170, 65);">
-            <em>
-                ENTER VALID DETAILS IN THE BELOW SECTION</em>
-        </marquee>
-        <form action="submit.html">
-            <fieldset class="form">
-                <legend>Registeration form</legend>
-                NAME :
-                <br><br>
-                <input type="text" class="textbox" placeholder="first name" required="required"><br><br>
-                <input type="text" class="textbox" placeholder="last name" required="required">
-                <br><br>
-                E-MAIL:
-                <br><br>
-                <input class="textbox" type="email" placeholder="e-mail" required="required">
-                <br><br>
-                DATE OF BIRTH :
-                <input type="date" name="dob">
-                <br><br>
-                GENDER :
-                <input type="radio" name="gender" value="male">male
-                <input type="radio" name="gender" value="female">female
-                <input type="radio" name="gender" value="others" checked="checked">others
-                <br><br>
-                MOBILE :
-                <br>
-                <br>
-                <select name="mobile">
-                    <option value="+91">+91</option>
-                </select>
-                <input
-                    type="tel"
-                    placeholder="mobile"
-                    maxlength="10"
-                    pattern="[0-9]*"
-                    inputmode="numeric">
-                <br><br>
-                BRANCH :
-                <select name="branch">
-                    <option value="" default="default">select</option>
-                    <option value="CSE">CSE</option>
-                    <option value="IT">IT</option>
-                    <option value="ECE">ECE</option>
-                    <option value="EEE">EEE</option>
-                    <option value="CIVIL">CIVIL</option>
-                    <option value="MARINE">MARINE</option>
-                    <option value="CHEMICAL">CHEMICAL</option>
-                    <option value="INSTRUMENTATION">INSTRUMENTATION</option>
-                    <option value="GEOINFORMATICS">GEOINFORMATICS</option>
-                    <option value="METALLURGY">METALLURGY</option>
-                </select>
-                <br><br>
-                COURSE :
-                <input type="checkbox" value="B.Tech" checked="checked">B.Tech
-                <input type="checkbox" value="M.Tech">M.Tech
-                <br><br>
-                EAMCET HALL-TICKET :
-                <br><br>
-                <input
-                    class="textbox"
-                    type="text"
-                    placeholder="HALL-TICKET"
-                    pattern="[0-9]*"
-                    inputmode="numeric"
-                    maxlength="11">
-                <br><br>
-                EAMCET RANK CARD :
-                <br><br>
-                <input type="file" accept=".pdf">
-                <br><br>
-                AADHAR NO :
-                <br><br>
-                <input
-                    class="textbox"
-                    type="text"
-                    placeholder="ENTER 12 DIGIT NUMBER"
-                    maxlength="12"
-                    pattern="[0-9]*"
-                    inputmode="numeric">
-                <br><br>
-                DISTRICT :
-                <select name="district">
-                    <option value="" default="default">select</option>
-                    <option value="KRISHNA">KRISHNA</option>
-                    <option value="ELURU">ELURU</option>
-                    <option value="NTR">NTR</option>
-                    <option value="VISAKHAPATNAM">VISAKHAPATNAM</option>
-                    <option value="VIZIANAGARAM">VIZIANAGARAM</option>
-                    <option value="PALNADU">PALNADU</option>
-                    <option value="SRIKAKULAM">SRIKAKULAM</option>
-                    <option value="BAPATLA">BAPATLA</option>
-                    <option value="NANDYAL">NANDYAL</option>
-                    <option value="PARVATHIPURAM MANYAM">PARVATHIPURAM MANYAM</option>
-                    <option value="ALLURI SITARAMA RAJU">ALLURI SITARAMA RAJU</option>
-                    <option value="EAST GODAVARI">EAST GODAVARI</option>
-                    <option value="ANAKAPALLI">ANAKAPALLI</option>
-                    <option value="KAKINADA">KAKINADA</option>
-                    <option value="WEST GODAVARI">WEST GODAVARI</option>
-                    <option value="DR.B.R.AMBEDKAR KONASEEMA">DR.B.R.AMBEDKAR KONASEEMA</option>
-                    <option value="GUNTUR">GUNTUR</option>
-                    <option value="PRAKASAM">PRAKASAM</option>
-                    <option value="NELLORE">NELLORE</option>
-                    <option value="SRI SATHYA SAI">SRI SATHYA SAI</option>
-                    <option value="YSR">YSR</option>
-                    <option value="CHITTOOR">CHITTOOR</option>
-                    <option value="ANNAMAYYA">ANNAMAYYA</option>
-                    <option value="TIRUPATI">TIRUPATI</option>
-                    <option value="KADAPA">KADAPA</option>
-                    <option value="ANANTAPUR">ANANTAPUR</option>
-                    <option value="KURNOOL">KURNOOL</option>
-                </select>
-                <br><br>
-                ADDRESS :
-                <br><br>
-                <textarea class="textbox" cols="40" rows="5" placeholder="As per aadhar"></textarea>
-                <br>
-                PHOTO :
-                <br><br>
-                <input type="file" accept="image/*">
-                <br>
-                <br>
-                <center>
-                    <button type="submit" class="sub">Submit</button>
-                </center>
-            </fieldset>
-        </form>
-        <br>
-        <center>
-            <p>Copyright &copy;LUCI institute 2029</p>
-        </center>
-        <br>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" href="img.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="validation.js" defer></script>
+</head>
+<body>
+    <center>
+        <a href="index.html">
+            <h1 class="head">
+                <sub><img src="img.png" alt="" width="50px"></sub> LUCI INSTITUTE OF TECHNOLOGY
+            </h1>
+        </a>
+    </center>
+    <marquee scrollamount="15" direction="left" style="color: rgb(255, 170, 65);">
+        <em>ENTER VALID DETAILS IN THE BELOW SECTION</em>
+    </marquee>
+    <form action="submit.html" onsubmit="return validateForm()">
+        <fieldset class="form">
+            <legend>Registration Form</legend>
+            NAME:
+            <br><br>
+            <input type="text" id="firstName" class="textbox" placeholder="first name" required><br><br>
+            <input type="text" id="lastName" class="textbox" placeholder="last name" required><br><br>
+            
+            E-MAIL:
+            <br><br>
+            <input id="email" class="textbox" type="email" placeholder="e-mail" required><br><br>
+            
+            DATE OF BIRTH:
+            <input type="date" id="dob" name="dob"><br><br>
+            
+            GENDER:
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+            <input type="radio" name="gender" value="others" checked>others<br><br>
+            
+            MOBILE:
+            <br><br>
+            <select name="mobile">
+                <option value="+91">+91</option>
+            </select>
+            <input type="tel" id="mobile" placeholder="mobile" maxlength="10" pattern="[0-9]*" inputmode="numeric"><br><br>
+            
+            BRANCH:
+            <select id="branch" name="branch">
+                <option value="">Select</option>
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="CIVIL">CIVIL</option>
+            </select><br><br>
+            
+            COURSE:
+            <input type="checkbox" value="B.Tech" checked>B.Tech
+            <input type="checkbox" value="M.Tech">M.Tech<br><br>
+
+            DISTRICT:
+            <select id="district" name="district">
+                <option value="">Select</option>
+                <option value="KRISHNA">KRISHNA</option>
+                <option value="ELURU">ELURU</option>
+                <option value="NTR">NTR</option>
+                <option value="VISAKHAPATNAM">VISAKHAPATNAM</option>
+                <option value="VIZIANAGARAM">VIZIANAGARAM</option>
+            </select><br><br>
+
+            AADHAR NO:
+            <br><br>
+            <input class="textbox" id="aadharNumber" type="text" placeholder="ENTER 12 DIGIT NUMBER" maxlength="12" pattern="[0-9]*" inputmode="numeric"><br><br>
+            
+            EAMCET HALL-TICKET:
+            <br><br>
+            <input class="textbox" type="text" id="hallTicket" placeholder="HALL-TICKET" pattern="[0-9]*" inputmode="numeric" maxlength="11"><br><br>
+            
+            EAMCET RANK CARD:
+            <br><br>
+            <input type="file" id="rankCard" accept=".pdf"><br><br>
+            
+            <center>
+                <button type="submit" class="sub">Submit</button>
+            </center>
+        </fieldset>
+    </form>
+    <br>
+    <center>
+        <p>Copyright &copy; LUCI institute 2029</p>
+    </center>
+    <br>
+</body>
 </html>
